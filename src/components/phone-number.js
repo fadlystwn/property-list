@@ -1,8 +1,7 @@
 import {useState} from 'react'
 import encryptPhone from '../helpers/encrypt-phone'
-
 const PhoneNumber = () => {
-  const phoneNumber = '+65 88887541'
+  const phoneNumber = '88887541';
   const [showPhone, setShowPhone] = useState(false)
 
   const handleShowPhoneNumber = () => {

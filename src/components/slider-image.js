@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import Slider from "react-slick";
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid'
-
 
 const SliderImage = () => {
   const settings = {
@@ -17,30 +17,30 @@ const SliderImage = () => {
   return (
     <Slider {...settings}>
       <div className="flex relative">
-        <img
+        <Image
           className="rounded-t-md"
-          width="544px"
-          height="272px"
-          src="https://via.placeholder.com/544x272"
+          width={544}
+          height={272}
+          src="/images/image.png"
           alt="Placeholder"
         />
       </div>
       <div className="flex relative">
-      <img
-      className="rounded-t-md"
-      width="544px"
-      height="272px"
-      src="https://via.placeholder.com/544x272"
-      alt="Placeholder"
-    />
+      <Image
+        className="rounded-t-md"
+        width={544}
+        height={272}
+        src="/images/image.png"
+        alt="Placeholder"
+      />
       </div>
       <div className="flex relative">
-      <img
-      className="rounded-t-md"
-      width="544px"
-      height="272px"
-      src="https://via.placeholder.com/544x272"
-      alt="Placeholder"
+      <Image
+        className="rounded-t-md"
+        width={544}
+        height={272}
+        src="/images/image.png"
+        alt="Placeholder"
     />
       </div>
     </Slider>
