@@ -10,8 +10,28 @@
   border: 1px solid black;
 } */
 
-.mainPic {
+.slick-next {
+  width: 48px;
+  height: 48px;
+  right: 15px;
+  z-index: 1;
+  color: transparent;
 }
 
-.mainContent {
+.slick-prev {
+  left: 15px;
+  width: 48px;
+  height: 48px;
+  z-index: 1;
+  color: transparent;
 }
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+  font-size: 120px;
+ color: #FFF;
+}
+
