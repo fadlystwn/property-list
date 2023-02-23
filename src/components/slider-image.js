@@ -1,32 +1,48 @@
+import Image from 'next/image'
 import Slider from "react-slick";
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/solid'
 
 const SliderImage = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: false,
     slidesToShow: 1,
     dots: false,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <ChevronRightIcon/>,
+    prevArrow: <ChevronLeftIcon/>
   };
 
   return (
     <Slider {...settings}>
-      <img
-        className="w-full h-60 object-cover rounded-t-md"
-        width="544px"
-        height="272px"
-        src="https://via.placeholder.com/544x272"
+      <div className="flex relative">
+        <Image
+          className="rounded-t-md"
+          width={544}
+          height={272}
+          src="/images/image.png"
+          alt="Placeholder"
+        />
+      </div>
+      <div className="flex relative">
+      <Image
+        className="rounded-t-md"
+        width={544}
+        height={272}
+        src="/images/image.png"
         alt="Placeholder"
       />
-      <img
-      className="w-full h-60 object-cover rounded-t-md"
-      width="544px"
-      height="272px"
-      src="https://via.placeholder.com/544x272"
-      alt="Placeholder"
+      </div>
+      <div className="flex relative">
+      <Image
+        className="rounded-t-md"
+        width={544}
+        height={272}
+        src="/images/image.png"
+        alt="Placeholder"
     />
+      </div>
     </Slider>
   )
 }
